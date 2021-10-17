@@ -1,0 +1,134 @@
+<!--FILTRAGEM-->
+<header class="main-header">
+    <!--FILTRAGEM.BOTÃO-->
+    <div class="bg-transparent">
+        <button type="button" class="btn btn-outline-light rounded-circle filtro" data-toggle="modal" data-target="#exampleModal">
+            <i class="fas fa-filter fa-2x pt-2"></i>
+        </button>
+    </div>
+</header>
+
+
+<!--BODY-->
+<section class="container main-container">
+    <!--BODY.GALERIA-->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-2 justify-content-start main-content">
+        <!--BODY.GALERIA.CARD[01]-->
+        <div class="col px-3 my-3">
+            <div class="card">
+                <div class="card-bg position-absolute h-100 w-100"></div>
+                <img class="card-border w-100 h-100" src="./images/borda card.png" />
+                <a class="btn bg-transparent d-block card-titulo">
+                    <h4 class="my-1">R$ ▯.▯▯▯,▯▯</h4>
+                    <img src="https://imgur.com/LnKZ0mR.png" class="card-img-top" alt="FOTO DO PRODUTO" />
+                </a>
+                <div class="card-body row pt-0">
+                    <h3 class="col-12">PRODUTO NOME</h3>
+                    <div class="col">
+                        <ul class="card-text px-0">
+                            <li>Detalhe</li>
+                            <li>Detalhe</li>
+                            <li>Detalhe</li>
+                            <li>Detalhe</li>
+                        </ul>
+                    </div>
+                    <div class="col d-flex justify-content-end align-content-end flex-wrap">
+                        <button class="btn btn-outline-light rounded-circle align-items-center cart-add" type="button">
+                            <a class="fas fa-plus "></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--BODY.GALERIA.CARD[02]-->
+        <div class="col px-3 my-3">
+            <div class="card">
+                <div class="card-bg position-absolute h-100 w-100"></div>
+                <img class="card-border w-100 h-100" src="./images/borda card.png" />
+                <a class="btn bg-transparent d-block card-titulo">
+                    <h4 class="my-1">R$ ▯.▯▯▯,▯▯</h4>
+                    <img src="https://imgur.com/LnKZ0mR.png" class="card-img-top" alt="FOTO DO PRODUTO" />
+                </a>
+                <div class="card-body row pt-0">
+                    <h3 class="col-12">PRODUTO NOME</h3>
+                    <div class="col">
+                        <ul class="card-text px-0">
+                            <li>Detalhe</li>
+                            <li>Detalhe</li>
+                            <li>Detalhe</li>
+                            <li>Detalhe</li>
+                        </ul>
+                    </div>
+                    <div class="col d-flex justify-content-end align-content-end flex-wrap">
+                        <button class="btn btn-outline-light rounded-circle align-items-center cart-add" type="button">
+                            <a class="fas fa-plus "></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--BODY.GALERIA.CARD[03]-->
+        <div class="col px-3 my-3">
+            <div class="card">
+                <div class="card-bg position-absolute h-100 w-100"></div>
+                <img class="card-border w-100 h-100" src="./images/borda card.png" />
+                <a class="btn bg-transparent d-block card-titulo">
+                    <h4 class="my-1">R$ ▯.▯▯▯,▯▯</h4>
+                    <img src="https://imgur.com/LnKZ0mR.png" class="card-img-top" alt="FOTO DO PRODUTO" />
+                </a>
+                <div class="card-body row pt-0">
+                    <h3 class="col-12">PRODUTO NOME</h3>
+                    <div class="col">
+                        <ul class="card-text px-0">
+                            <li>Detalhe</li>
+                            <li>Detalhe</li>
+                            <li>Detalhe</li>
+                            <li>Detalhe</li>
+                        </ul>
+                    </div>
+                    <div class="col d-flex justify-content-end align-content-end flex-wrap">
+                        <button class="btn btn-outline-light rounded-circle align-items-center cart-add" type="button">
+                            <a class="fas fa-plus "></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END[BODY.GALERIA]-->
+    </div>
+</section>
+
+
+<!-- FILTRAGEM.MODAL -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">FILTROS DE PESQUISA</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body my-0 py-0">
+                <div id="filtros" class="py-2">
+                    <span class="badge border border-info bg-info rounded-pill my-1">
+                            Filtro A
+                            <a class="btn fas fa-times-circle m-0 p-0"></a>
+                        </span>
+                    <span class="badge border border-info bg-info rounded-pill my-1">
+                            Filtro B
+                            <a class="btn fas fa-times-circle m-0 p-0"></a>
+                        </span>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-start">
+                Campos de filtragem
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
