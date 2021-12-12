@@ -1,31 +1,70 @@
 body {
-    /*background-color: #1c5a73;*/
-    /*background: linear-gradient(217deg, #02303f, #1c5a73 70.71%), linear-gradient(127deg, #4a748a, #02303f 70.71%), linear-gradient(336deg, #082922, #224b39 70.71%);*/
-    background: linear-gradient(0.25turn, #02303f, #4a748a, #4a748a, #4a748a, #02303f);
-    font-family: 'Abril Fatface', cursive;
+    background: white;
+    font-family: 'Courier New', 'Andale Mono', monospace;
+    min-height: 100vh;
 }
 
 li {
     list-style-type: none;
 }
 
-footer * {
-    color: #708564;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    font-size: 12px;
+footer {
+    position: absolute;
+    width: 100%;
+}
+
+footer div,
+footer span,
+footer i {
+    font-size: 14px;
+    font-weight: 900;
     padding: 0px;
+    color: #565656;
+    background-color: #292929;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+footer a {
+    font-size: smaller;
+    color: #565656;
+}
+
+footer a:hover {
+    color: #828282;
 }
 
 #navbar {
+    color: black;
     font-size: large;
-    background-color: #224b39;
+    background-color: white;
+    min-height: 164px;
+    max-height: 164px;
+    /* box-shadow: 0 0 1em #97aec9cc; */
 }
 
 #logo {
-    height: 40px;
-    border-color: white;
-    border: 3px solid;
-    border-radius: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200%;
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: black;
+}
+
+#logo:hover {
+    border: 2px solid black;
+}
+
+#logo2 {
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    border: 0px;
+    background-color: transparent;
+    color: #828282;
+    font-weight: 900;
 }
 
 #field-pesquisa:focus {
@@ -38,43 +77,8 @@ footer * {
     box-shadow: none;
 }
 
-#banner {
-    margin-top: 66px;
-    border-bottom: 8px double white;
-}
-
-#banner-title {
-    position: absolute;
-    width: 50%;
-    top: 0%;
-    right: 1.8%;
-    font-size: 120px;
-    color: white;
-    text-shadow: 16px;
-    z-index: 10;
-}
-
-#banner-subtitulo-1 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 128px;
-}
-
-#banner-subtitulo-2 {
-    font-family: 'Goldman', cursive;
-    font-size: 128px;
-}
-
-#banner-subtitulo-3 {
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    font-size: 128px;
-}
-
-.carousel-control-prev {
-    z-index: 11;
-}
-
-.carousel-control-next {
-    z-index: 11;
+#vazio {
+    height: 157px;
 }
 
 .main-container {
@@ -89,30 +93,44 @@ footer * {
 }
 
 .main-header {
-    position: -webkit-sticky;
-    position: sticky;
     height: 50px;
-    top: 90px;
+    top: 212px;
     /* y axis limit until becomes fixed */
-    margin-top: 12px;
+    margin-top: -16px;
     /* y height from the upper html element */
     margin-left: 92%;
     margin-bottom: -100px;
     z-index: 100;
 }
 
-.filtro {
-    background-color: #708564;
+#filtro {
+    left: -90%;
+    right: 0%;
+}
+
+.my-button {
+    background-color: #e9e9e9;
     border-width: 0px;
+    /* margin-left: -30%; */
+}
+
+.h5-button {
+    text-align: center;
+    font-size: 24px;
 }
 
 .card {
-    color: white;
+    color: #323232;
     /*text-shadow: 4px 4px 4px #06273a;*/
     background-color: transparent;
     padding: 0px;
     border-radius: 0px;
     border-width: 0px;
+}
+
+.card:hover {
+    box-shadow: 0 0 1em #97aec9cc;
+    /* box-shadow: 0 19px 0px 0px white, 0 -19px 0px 0px white, 12px 0 15px -4px #97aec9cc, -12px 0 15px -4px #97aec9cc */
 }
 
 .card-bg {
@@ -124,9 +142,9 @@ footer * {
 }
 
 .card-titulo {
-    color: white;
+    color: #242424;
     background-color: transparent;
-    border-width: 0px;
+    border-width: 2px;
     /*padding: 0px;*/
     /*border-radius: 0px;*/
     margin-top: 8px;
@@ -138,12 +156,12 @@ footer * {
     /*border: 10px double white;*/
     border-radius: 0px;
     margin-top: 8px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .cart-add {
-    background-color: #708564;
+    background-color: #e9e9e9;
     border-width: 0px;
     height: 56px;
     width: 56px;
@@ -151,6 +169,32 @@ footer * {
 
 .trans-25 {
     opacity: 25%;
+}
+
+
+/* .produto-pag {} */
+
+.produto-content {
+    /* max-height: 1vh; */
+    justify-content: center;
+}
+
+#banner {
+    margin: 0px;
+    width: 100%;
+}
+
+.main-img {
+    width: initial;
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small-img {
+    width: 64px;
+    /* background-color: #242424; */
 }
 
 @media screen and (max-width: 991px) {

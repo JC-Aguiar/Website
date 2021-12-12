@@ -1,61 +1,95 @@
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <!--LOGO-->
-    <a class="navbar-brand" href="#">
-        <img id="logo" src="images/MECOMMERC - Logo 2.png" alt="meCOMMERCE" class="img-fluid">
-    </a>
-    <!--MENU-MOBILE-->
-    <div class="d-flex flex-row justify-content-end align-items-center">
-        <!--CARRINHO-->
-        <button id="carrinho" class="btn btn-outline-light rounded-circle d-flex d-lg-none mr-3 px-2 align-items-center" type="button">
-            <a class="fas fa-shopping-bag fa-2x"></a>
-        </button>
-        <!--USUÁRIO-->
-        <button id="usuario" class="btn btn-outline-light rounded-circle d-flex d-lg-none mr-3 px-2 align-items-center" type="button">
-            <a class="fas fa-user fa-2x"></a>
-        </button>
-        <!--LINKS-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    </div>
-    <!--MENU-PADRÃO-->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!--FORMATAÇÃO-->
-        <ul id="links" class="navbar-nav mr-auto w-100 justify-content-end align-items-lg-center align-items-end">
-            <!--PESQUISA-->
-            <li class="w-100">
-                <form id="form-pesquisa" class="btn-group d-none d-lg-flex btn btn-outline border rounded-pill py-0" role="group">
-                    <input id="field-pesquisa" class="form-control mr-sm-2 bg-transparent border-0 rounded-pill text-white" type="search" placeholder="Pesquisar" aria-label="Pesquisar" form="form-pesquisa">
-                    <button id="btn-pesquisa" class="btn text-white btn-outline my-2 my-sm-0 fas fa-search rounded-circle" type="submit" form="form-pesquisa"></button>
-                </form>
-            </li>
+<nav id="navbar" class="navbar navbar-light navbar-expand-lg fixed-top d-block">
+    <box class="row">
+        <!--LOGO-->
+        <a class="col-12 navbar-brand container-fluid justify-content-center mx-0 px-0" href="#">
+            <span id="logo" class="btn btn-light">GMAVINTAGE</span>
+        </a>
+        <!--MENU-MOBILE-->
+        <div class="col-12 d-flex flex-row justify-content-center align-items-center">
             <!--LINKS-->
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Novidades</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produtos</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Setor 1</a>
-                    <a class="dropdown-item" href="#">Setor 2</a>
-                    <a class="dropdown-item" href="#">Setor 3</a>
-                </div>
-            </li>
+            <button id="links" class="btn btn-outline-secondary my-button navbar-toggler rounded-fill d-flex d-lg-none mr-3 px-2 align-items-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <a class="fas fa-ellipsis-h fa-2x"></a>
+            </button>
+            <!--PESQUISA-->
+            <button id="icon-pesquisa" class="btn btn-outline-secondary my-button rounded-fill d-flex d-lg-none mr-3 px-2 align-items-center" type="button" data-toggle="modal" data-target="#pesquisaModal">
+                <a class="fas fa-search fa-2x"></a>
+            </button>
             <!--CARRINHO-->
-            <li>
-                <button id="carrinho" class="btn btn-outline-light rounded-circle d-none d-lg-flex px-2 align-items-center mx-3" type="button">
-                    <a class="fas fa-shopping-bag fa-2x"></a>
-                </button>
-            </li>
+            <button id="carrinho" class="btn btn-outline-secondary my-button rounded-fill d-flex d-lg-none mr-3 px-2 align-items-center" type="button">
+                <a class="fas fa-shopping-bag fa-2x"></a>
+            </button>
             <!--USUÁRIO-->
-            <li>
-                <button id="usuario" class="btn btn-outline-light rounded-circle d-none d-lg-flex px-2 align-items-center mx-3" type="button">
-                    <a class="fas fa-user fa-2x"></a>
-                </button>
-            </li>
-        </ul>
-    </div>
+            <button id="usuario" class="btn btn-outline-secondary my-button rounded-fill d-flex d-lg-none mr-3 px-2 align-items-center" type="button">
+                <a class="fas fa-user fa-2x"></a>
+            </button>
+            <!--LINKS-->
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+        </div>
+        <div class="col-12">
+            <!--MENU-PADRÃO-->
+            <div class="navbar-collapse collapse bg-white" id="navbarSupportedContent">
+                <!--FORMATAÇÃO-->
+                <ul id="links" class="navbar-nav mr-auto w-100 justify-content-center align-items-lg-center align-items-start">
+                    <!--PESQUISA-->
+                    <li class="w-100">
+                        <form id="form-pesquisa" class="btn-group d-none d-lg-flex btn btn-outline border rounded-pill py-0" role="group">
+                            <input id="field-pesquisa" class="form-control mr-sm-2 bg-transparent border-0 rounded-pill" type="search" placeholder="Pesquisar" aria-label="Pesquisar" form="form-pesquisa">
+                            <button id="btn-pesquisa" class="btn btn-outline my-2 my-sm-0 fas fa-search rounded-circle" type="submit" form="form-pesquisa"></button>
+                        </form>
+                    </li>
+                    <!--LINKS-->
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-dark" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-dark" href="#">Novidades</a>
+                    </li>
+                    <li class="nav-item dropdown px-3">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Produtos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Setor 1</a>
+                            <a class="dropdown-item" href="#">Setor 2</a>
+                            <a class="dropdown-item" href="#">Setor 3</a>
+                        </div>
+                    </li>
+                    <!--CARRINHO-->
+                    <li class="">
+                        <button id="carrinho" class="btn btn-outline-secondary my-button rounded-circle d-none d-lg-flex px-2 align-items-center mx-3" type="button">
+                            <a class="fas fa-shopping-bag fa-2x"></a>
+                        </button>
+                    </li>
+                    <!--USUÁRIO-->
+                    <li class="">
+                        <button id="usuario" class="btn btn-outline-secondary my-button rounded-circle d-none d-lg-flex px-2 align-items-center mx-3" type="button">
+                            <a class="fas fa-user fa-2x"></a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </box>
 </nav>
+<!-- PESQUISA.MODAL -->
+<div class="modal fade pt-5 mt-3" id="pesquisaModal" tabindex="-1" role="dialog" aria-labelledby="pesquisaModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">PESQUISAR NO SITE</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body my-3 py-0">
+                <form id="form-pesquisa" class="btn-group btn btn-outline border rounded-pill w-100 py-0" role="group">
+                    <input id="field-pesquisa" class="form-control mr-sm-2 bg-transparent border-0 rounded-pill" type="search" placeholder="Pesquisar" aria-label="Pesquisar" form="form-pesquisa">
+                    <button id="btn-pesquisa" class="btn btn-outline my-2 my-sm-0 fas fa-search rounded-circle" type="submit" form="form-pesquisa"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="vazio"></div>

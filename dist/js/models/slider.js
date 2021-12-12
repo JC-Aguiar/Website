@@ -10,7 +10,3 @@ function slider() {
 function slideImage() {
     console.log("oi");
 }
-// $(function(){
-//     $(".bootstrap-carousel").removeAttr("hidden");
-//     $(".bootstrap-item").removeAttr("hidden");
-// });
