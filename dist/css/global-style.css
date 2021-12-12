@@ -194,6 +194,9 @@ footer a:hover {
 
 .small-img {
     width: 64px;
+    height: 64px;
+    margin-top: auto;
+    margin-bottom: auto;
     /* background-color: #242424; */
 }
 
