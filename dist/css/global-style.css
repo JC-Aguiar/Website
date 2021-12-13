@@ -1,7 +1,7 @@
 body {
     background: white;
     font-family: 'Courier New', 'Andale Mono', monospace;
-    min-height: 100vh;
+    height: 100%;
 }
 
 li {
@@ -11,6 +11,8 @@ li {
 footer {
     position: absolute;
     width: 100%;
+    display: table-row;
+    height: 0;
 }
 
 footer div,
@@ -114,9 +116,9 @@ footer a:hover {
     /* margin-left: -30%; */
 }
 
-.h5-button {
+.text-button {
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .card {
@@ -171,11 +173,15 @@ footer a:hover {
     opacity: 25%;
 }
 
+.rotate-180 {
+    transform: rotate(180deg);
+    transform: rotateX(180deg);
+}
+
 
 /* .produto-pag {} */
 
 .produto-content {
-    /* max-height: 1vh; */
     justify-content: center;
 }
 
